@@ -1,0 +1,148 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--light-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-size: auto 50vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+main {
+  max-width: 750px;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0.7rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  height: 45px;
+  margin-bottom: 3rem;
+}
+
+.Header > span {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.content_li {
+  border-bottom: 1px solid var(--grayish-purple);
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  gap: 1.2rem;
+  margin: 1rem 0;
+  width: 750px;
+}
+
+.question:hover {
+  cursor: pointer;
+  color: #ad29eb;
+}
+
+.question > span.text {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--dark-purple);
+
+  &:hover {
+    cursor: pointer;
+    color: #ad29eb;
+  }
+}
+
+.answer {
+  margin: 1rem 0;
+}
+
+.answer > p {
+  font-size: 1rem;
+  color: var(--grayish-purple);
+}
+
+.answer {
+  display: none;
+}
+
+.answer.on {
+  display: block;
+}
+
+a {
+  font-size: 1.2rem;
+  color: var(--grayish-purple);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-size: auto 50vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  main {
+    width: 375px;
+  }
+
+  .question {
+    width: 375px;
+    gap: 1.2rem;
+  }
+
+  .question > span.text {
+    font-size: 1.1rem;
+  }
+
+  .answer > p,
+  a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    display: none;
+  }
+
+  .alert {
+    color: var(--dark-purple);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
