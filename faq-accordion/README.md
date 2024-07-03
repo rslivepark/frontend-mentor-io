@@ -3,7 +3,8 @@
 - Frontend Mentor 챌린지 과제 (난이도 newbie)
 - https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz/hub
 
-### 미리보기
+### 미리보기  
+- https://tubular-cendol-cc62cb.netlify.app/  
 
 ### 필수 구현 기능
 
